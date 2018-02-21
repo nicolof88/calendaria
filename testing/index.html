@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+<body class="bg-light" background="https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png">
+  <!-- NavBar --> 
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}" style="font-family: 'Lobster', cursive;">Calendaria</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <!-- Input date form -->
+        <form class="form-inline my-2 my-lg-0" method="POST">
+          <input class="form-control mr-sm-2" type="text" placeholder="dd/mm/yyyy" name="inputdate" action="{{ url_for('index') }}">
+          <button class="btn my-2 my-sm-0 btn-outline-dark" type="submit">Select Date</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="" style="font-family: 'Lobster', cursive;">2 of June of 2017</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Table -->
+          
+		  
+		  
+		  
+		  <div class="panel-group">
+		    <div class="panel panel-default">
+			  <div class="panel-heading">
+			    <div class="container">
+			    <h4 class="mb-0">
+				  <button class="btn" width="100%" data-toggle="collapse" data-target="#collapse1" style="font-family: 'Lobster', cursive;">General Calendar</button>
+				</h4>
+				</div>
+			  </div>
+			  <div id="collapse1" class="panel-collapse collapse show">
+				<table class="table table-hover" style="font-family: 'Lobster', cursive;">
+                  <thead class="text-center">
+                    <tr class="bg-secondary text-center bg-gradient">
+                      <th>Step</th>
+                      <th class="style">LO</th>
+                      <th>IN</th>
+                      <th>HU</th>
+                      <th>CO</th>
+                      <th class="style">LO</th>
+                      <th>IN</th>
+                      <th>HU</th>
+                      <th>CO</th>
+                    </tr>
+                  </thead>
+                </table>
+    </div>
+  </div>
+</div>
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- JavaScript for Bootstrap, Jquery and cloudfare -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
